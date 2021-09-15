@@ -1,0 +1,25 @@
+{
+    "name": "pseudo",
+    "displayName": "pseudo",
+    "description": "pseudo-pspec",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pseudo",
+            "aliases": ["pseudo", "pseudo"],
+            "extensions": [".pseudo"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pseudo",
+            "scopeName": "source.pseudo",
+            "path": "./syntaxes/pseudo.tmLanguage.json"
+        }]
+    }
+}
