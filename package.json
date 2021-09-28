@@ -2,9 +2,14 @@
     "name": "pseudo",
     "displayName": "pseudo",
     "description": "pseudo-pspec",
-    "version": "0.0.1",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/rajareddye/pseudo-srd.git"
+	},
+    "publisher": "Alstom",
+	"version": "0.1.3",
     "engines": {
-        "vscode": "^1.60.0"
+        "vscode": "^1.40.0"
     },
     "categories": [
         "Programming Languages"

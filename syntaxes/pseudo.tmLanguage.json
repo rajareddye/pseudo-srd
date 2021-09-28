@@ -37,7 +37,7 @@
           "comment": "A loop (repetition) with a simple conditional test at its beginning."
         },
         {
-          "match": "(?i:\\b(IF|THEN|ELSE|ELSE IF|ENDIF)\\b)",
+          "match": "(?i:\\b(IF|THEN|ELSE|ELSIF|ENDIF)\\b)",
           "name": "keyword.control.pseudo",
           "comment": "A decision (selection) in which a choice is made between two alternative courses of action."
         },
@@ -57,7 +57,7 @@
           "comment": "A counting loop/iterate over a list"
         },
         {
-          "match": "(?i:\\b(READ|OBTAIN|GET)\\b)",
+          "match": "(?i:\\b(READ|OBTAIN|GET|call)\\b)",
           "name": "keyword.control.pseudo",
           "comment": "Input keywords"
         },
@@ -83,18 +83,18 @@
         },
         {
           "name": "keyword.control.pseudo",
-          "match": "(?i:\\b(BEGIN|EXCEPTION|WHEN|RAISE)\\b)",
+          "match": "(?i:\\b(BEGIN|EXCEPTION|WHEN|RAISE|CASE)\\b)",
           "comment": "Error handling"
         },
 
         {
-          "match": "(?i:\\b(END IF|END WHILE|END FOR)\\b)",
+          "match": "(?i:\\b(ENDIF|ENDWHILE|ENDFOR|ENDCASE)\\b)",
           "name": "keyword.control.pseudo",
           "comment": "This is for common mistakes, should be invalid.illegal.pseudo"
         },
 
         {
-          "match": "(?i:\\b(IF|THEN|ELSE|ELSE IF|END IF|WHILE|FOR|TO|EACH|END FOR|RETURN|CONTINUE|Do|Until|Loop|Next|With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub|IIf)\\b)",
+          "match": "(?i:\\b(IF|THEN|ELSE|ELSIF|ENDIF|WHILE|FOR|TO|EACH|END FOR|RETURN|CONTINUE|Do|Until|Loop|Next|With|ExitDo|EXITFOR|EXITWHILE|Exit Property|Exit Sub|IIf)\\b)",
           "name": "keyword.control.pseudo"
         },
         {
@@ -103,7 +103,7 @@
         },
         {
           "name": "keyword.control.pseudo",
-          "match": "(?i:\\b(CALL|WITH|RETURNING|EACH|THEN|RETURN)\\b)"
+          "match": "(?i:\\b(call|CALL|WITH|RETURNING|EACH|THEN|RETURN)\\b)"
         },
         {
           "name": "keyword.operator.comparison.pseudo",
@@ -111,7 +111,7 @@
         },
         {
           "name": "keyword.operator.comparison.pseudo",
-          "match": "(?i:\\b(IS|IS NOT|EQUAL|NOT EQUAL|IN|AND)\\b)"
+          "match": "(?i:\\b(is|IS|IS NOT|EQUAL|NOT EQUAL|IN|AND)\\b)"
         },
         {
           "match": "(?i:\\s*\\b(EMPTY|FALSE|NOTHING|NULL|TRUE)\\b)",

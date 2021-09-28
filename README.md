@@ -1,65 +1,23 @@
 # pseudo README
 
-This is the README for your extension "pseudo". After writing up a brief description, we recommend including the following sections.
+SRD Pseudo code syntax highlighter for ‘Visual Studio Code’
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+These are the steps to view SRD pseudo code in microsoft ‘visual studio code‘ , which is free and rich code editor with more options.
+Step_1 : Install latest 'Visual Studio Code’  by downloading from website Download Visual Studio Code - Mac, Linux, Windows you can use System Installer.
+               Offline installer is included for convience ‘VSCodeSetup-x64-1.60.0.exe.zip’ .you can aslo install this.
+Step_2 : After installation launch the ‘Visual Studio Code ‘ . Goto settings and select extensions  and then search for ‘pseudo-pspec’ and ‘vscode-icons’ extensions and install them.
+	You can also install these plugins manually with attached pseudo-0.1.2.vsix.zip, using command ,
+	Goto view open Command Palette  run the command ‘Extensions: Install from VSIX ‘ and Select the file : *.vsix from the attached file
+Step_3 : Using ‘extract_all_pspecs.py’ convert SRD docx to *.pseudo files and folders.
+	Now right_click on the folder and select open with ‘visual studio code’ . you search all the *.pseudo  pspec files in the same as word document.
 
-For example if there is an image subfolder under your extension project workspace:
+Note : files with long path is very well handled by ‘visual studio code’.
+	Screen shot of SRD *.pseudo 
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+# known issues:
+you need to enable windows long path .
+If you have any « file not found error« , Then run the below command in power-sheel in administrator mode
+run the below command .
+New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
