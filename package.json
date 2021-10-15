@@ -2,9 +2,14 @@
     "name": "gfd",
     "displayName": "gfd",
     "description": "rqmts",
-    "version": "0.0.1",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/rajareddye/pseudo-srd.git"
+	},
+    "publisher": "rqmts-gfd",
+	"version": "0.1.0",
     "engines": {
-        "vscode": "^1.61.0"
+        "vscode": "^1.40.0"
     },
     "categories": [
         "Programming Languages"
