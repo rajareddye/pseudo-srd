@@ -1,30 +1,25 @@
 {
-    "name": "pseudo",
-    "displayName": "pseudo",
-    "description": "pseudo-pspec",
-    "repository": {
-		"type": "git",
-		"url": "https://github.com/rajareddye/pseudo-srd.git"
-	},
-    "publisher": "pseudo-srd",
-	"version": "0.1.3",
+    "name": "gfd",
+    "displayName": "gfd",
+    "description": "rqmts",
+    "version": "0.0.1",
     "engines": {
-        "vscode": "^1.40.0"
+        "vscode": "^1.61.0"
     },
     "categories": [
         "Programming Languages"
     ],
     "contributes": {
         "languages": [{
-            "id": "pseudo",
-            "aliases": ["pseudo", "pseudo"],
-            "extensions": [".pseudo"],
+            "id": "rqmts",
+            "aliases": ["rqmts", "rqmts"],
+            "extensions": [".gfd"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "pseudo",
-            "scopeName": "source.pseudo",
-            "path": "./syntaxes/pseudo.tmLanguage.json"
+            "language": "rqmts",
+            "scopeName": "source.gfd",
+            "path": "./syntaxes/rqmts.tmLanguage.json"
         }]
     }
 }

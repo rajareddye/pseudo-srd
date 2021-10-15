@@ -1,25 +1,65 @@
-# pseudo README
+# gfd README
 
-> Pseudocode syntax highlighter (SRD in pspec files)
+This is the README for your extension "gfd". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
-> > Here are the steps to view SRD pseudo code in microsoft ‘visual studio code‘
-> >
-> > > Step*1 : Install latest 'Visual Studio Code’ from Appstore
-> > > Step_2 : After installation launch the ‘Visual Studio Code ‘ . Goto extensions and then search for ‘pseudo-pspec’ and install .
-> > > Step*3 : Using ‘extract_all_pspecs.py’ convert SRD docx to \*.pseudo files and folders. Before use this script save the word by accepting all markups.
-> > > Goto converted pseudo file folder and select open with ‘visual studio code’ . you get the SRD in VSCode
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-> > Note : files with long path is very well handled by ‘visual studio code’.
-> > Screen shot of SRD \*.pseudo
+For example if there is an image subfolder under your extension project workspace:
 
-## known issues:
+\!\[feature X\]\(images/feature-x.png\)
 
-> > you need to enable windows long path .
-> > windows version of VSCode does not search in long path files. due to regex constraint.
-> > Linux version of VSCode does not have long file path issues, It works well.
->
-> > To Enable long path run the below command in power-shell in administrator mode
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-> > > New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+## Requirements
+
+If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+
+## Extension Settings
+
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+
+For example:
+
+This extension contributes the following settings:
+
+* `myExtension.enable`: enable/disable this extension
+* `myExtension.thing`: set to `blah` to do something
+
+## Known Issues
+
+Calling out known issues can help limit users opening duplicate issues against your extension.
+
+## Release Notes
+
+Users appreciate release notes as you update your extension.
+
+### 1.0.0
+
+Initial release of ...
+
+### 1.0.1
+
+Fixed issue #.
+
+### 1.1.0
+
+Added features X, Y, and Z.
+
+-----------------------------------------------------------------------------------------------------------
+
+## Working with Markdown
+
+**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
+* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
+* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+
+### For more information
+
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+**Enjoy!**
