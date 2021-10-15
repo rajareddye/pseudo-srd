@@ -18,7 +18,8 @@
 
 > > you need to enable windows long path .
 > > windows version of VSCode does not search in long path files. due to regex constraint.
-> > Linux version of VSCode does not have long file path issues, It works well
-> > To Enable long path run the below command in power-sheel in administrator mode
-> >
+> > Linux version of VSCode does not have long file path issues, It works well.
+>
+> > To Enable long path run the below command in power-shell in administrator mode
+
 > > > New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
