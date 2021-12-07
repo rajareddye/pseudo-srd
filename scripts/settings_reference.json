@@ -1,0 +1,86 @@
+{
+  "workbench.iconTheme": "vs-minimal",
+  "terminal.integrated.defaultProfile.windows": "JavaScript Debug Terminal",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "JavaScript Debug Terminal": {
+      "extensionIdentifier": "ms-vscode.js-debug",
+      "icon": "debug",
+      "id": "extension.js-debug.debugTerminal",
+      "title": "JavaScript Debug Terminal"
+    }
+  },
+  "grunt.autoDetect": "on",
+  "gulp.autoDetect": "on",
+  "jake.autoDetect": "on",
+  "security.workspace.trust.untrustedFiles": "open",
+  "search.collapseResults": "alwaysCollapse",
+  "diffEditor.renderSideBySide": false,
+  "git.autofetch": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[ada]": {
+    "editor.defaultFormatter": "AdaCore.ada"
+  },
+  "[pseudo]": {
+    "editor.defaultFormatter": "jkillian.custom-local-formatters"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.addNodeAddonIncludePaths": true,
+  "C_Cpp.default.compilerArgs": [],
+  "editor.formatOnType": true,
+  "prettier.documentSelectors": ["pseudo"],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "cSpell.userWords": ["beyoncompare", "Pseudocode"],
+  "customLocalFormatters.formatters": [
+    {
+      "command": "python format_pseudo_files.py",
+      "languages": ["pseudo"]
+    }
+  ],
+  "workbench.colorTheme": "Visual Studio Dark",
+  "cSpell.customDictionaries": {
+    "custom-dictionary-user": {
+      "name": "custom-dictionary-user",
+      "path": "~/.cspell/custom-dictionary-user.txt",
+      "addWords": true,
+      "scope": "user"
+    }
+  },
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false
+  },
+  "update.mode": "manual",
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "ada.projectFile": "..\\designer_test\\integration\\rbc_appli_io.gpr",
+  "google-translate.firstLanguage": "en",
+  "google-translate.serverDomain": "https://translate.google.com/",
+  "google-translate.maxSizeOfResult": 500,
+  "editor.wordWrap": "on"
+}
