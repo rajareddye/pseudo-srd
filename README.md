@@ -23,6 +23,14 @@ Prerequisites.
 		}
 	 ]
   }  
+  
+    "customLocalFormatters.formatters": [
+    {
+      "command": "python %USERPROFILE%\\.vscode\\extensions\\pseudo-srd.pseudo-0.1.3\\format_pseudo_files.py",
+      "languages": ["pseudo"]
+    }
+  ],
+  
   '''
   this will enable vscode formatting for pseudo language (alf+shift+f). 
  
